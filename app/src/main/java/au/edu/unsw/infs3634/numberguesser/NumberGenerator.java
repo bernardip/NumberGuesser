@@ -4,14 +4,21 @@ import java.io.Serializable;
 
 public class NumberGenerator implements Serializable {
 
+    //user trials used
     private int counter = 0;
+    //user input digit
     private int digit;
+    //user number input from digits
     private int runningTotal;
+    //random number for user to guess
     private int randomNumber = generateNumber();
 
+    //generates a random number between 0 and 100
     public static int generateNumber() {
         return (int) (Math.random() * 100);
     }
+
+    //setters and getters
 
     public int getCounter() {
         return counter;

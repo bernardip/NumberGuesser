@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         //locates start button from xml
         Button btnStart = findViewById(R.id.btnStart);
 
-        //adds functionality to start button
+        //adds functionality to start button to start game
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Declare intent
         Intent intent = new Intent(MainActivity.this, MainGame.class);
+
         //launch activity with intent
         startActivity(intent);
 
