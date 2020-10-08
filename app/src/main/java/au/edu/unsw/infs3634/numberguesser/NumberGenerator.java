@@ -13,6 +13,7 @@ public class NumberGenerator implements Serializable {
     //random number for user to guess
     private int randomNumber = generateNumber();
 
+
     //generates a random number between 0 and 100
     public static int generateNumber() {
         return (int) (Math.random() * 100);
